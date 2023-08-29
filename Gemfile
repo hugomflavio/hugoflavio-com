@@ -37,3 +37,5 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 # So Ruby 3.x can be used https://github.com/jekyll/jekyll/issues/8523
 gem "webrick"
 
+
+gem "jekyll-seo-tag", "~> 2.1"
