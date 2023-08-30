@@ -62,50 +62,8 @@ layout: base
                 </div>
             </section>
 
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                <h2 class="section__title">About me</h2>
-                <span class="section__subtitle">My introduction</span>
-
-                <div class="about__container container grid">
-
-                    <picture class="about__img">
-                        <source media="(min-width: 768px)" srcset="assets/img/about_map_tall.svg">
-                        <!-- <source media="(max-width: 899px)" srcset="assets/img/blob.svg"> -->
-                        <img src="assets/img/about_map_flat.svg" alt="IfItDoesntMatchAnyMedia">
-                    </picture>
-
-                    <!-- <img src="assets/img/about_map_plain.svg" alt="" class="about__img"> -->
-                    <div class="about__data">
-                        <p class="about__description">My academic career started in Portugal, with a bachelor in biology and a masters in ecology. During both, I explored the ecology of rivers, and learned how to determine their <a id="eco_health" class="tooltip">ecological health</a> by understanding the animal communities that live in them.</p>
-
-                        <p class="about__description">From there, I flew to Denmark for an EU funded project on hard-bottom reefs. It was also there that I eventually did my PhD, using <a id="telemetry" class="tooltip">radio and acoustic telemetry</a> to track Atlantic salmon migrations.</p>
-
-                        <p class="about__description">These days, I am in Ontario (Canada), using <a id="respirometry" class="tooltip">aquatic respirometry</a> to study how sea lamprey and lake sturgeon react to changes in temperature! I am a big fan of opensource software, and over the years I have learned a lot about using R, arduino, and other tools to help me develop cool experiments.</p>
-
-                        <div class="about__info">
-                            <div>
-                                <span class="about__info-title">08+</span>
-                                <span class="about__info-name">Years <br> experience</span>
-                            </div>
-                            <div>
-                                <span class="about__info-title">08+</span>
-                                <span class="about__info-name">Completed <br> projects</span>
-                            </div>
-                            <div>
-                                <span class="about__info-title">08+</span>
-                                <span class="about__info-name">Companies <br> worked</span>
-                            </div>
-                        </div>
-
-                        <div class="about__buttons">
-                            <a download="" href="assets/pdf/Alexa-Cv.ped" class="button button--flex">
-                                Download CV<i class="uil uil-download-alt button__icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            {% assign about_page = site.pages | where: "title", "About" | first %}
+            {{ about_page.content }}
 
             <!--==================== SKILLS ====================-->
             <section class="skills section" id="skills">
