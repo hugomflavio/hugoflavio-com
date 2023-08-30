@@ -1,34 +1,44 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
-  <div class="wrapper">
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col">
-        <p class="feed-subscribe">
-          <a href="{{ site.feed.path | default: 'feed.xml' | absolute_url }}">
-            <svg class="svg-icon orange">
-              <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
-            </svg><span>Subscribe</span>
-          </a>
-        </p>
-        {%- if site.author %}
-        <ul class="contact-list">
-          {% if site.author.name -%}
-          <li class="p-name">{{ site.author.name | escape }}</li>
-          {% endif -%}
-          {% if site.author.email -%}
-          <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
-          {%- endif %}
-        </ul>
-        {%- endif %}
+<!--==================== FOOTER ====================-->
+<footer class="footer">
+  <div class="footer__bg">
+    <div class="footer__container container grid">
+      <div>
+        <h1 class="footer__title">Hugo</h1>
+        <span class="footer__subtitle">Ecophysiologist</span>
       </div>
-      <div class="footer-col">
-        <p>{{ site.description | escape }}</p>
+
+      <ul class="footer__links">
+        <li>
+          <a href="#services" class="footer__link">Services</a>
+        </li>
+        <li>
+          <a href="#portfolio" class="footer__link">Portfolio</a>
+        </li>
+        <li>
+          <a href="#contact" class="footer__link">Contact</a>
+        </li>
+      </ul>
+
+      <div class="footer__social">
+        <a href="https://ecoevo.social/@HugoMFlavio" target="_blank" class="footer__social-icon">
+          <i class="fab fa-mastodon"></i>
+        </a>
+
+        <a href="https://github.com/hugomflavio/" target="_blank" class="footer__social-icon">
+          <i class="uil uil-github-alt"></i>
+        </a>
+
+        <a href="https://www.researchgate.net/profile/Hugo-Flavio" target="_blank" class="footer__social-icon">
+          <i class="fa-brands fa-researchgate"></i>
+        </a>
       </div>
     </div>
 
-
+    <p class="footer__copy">&#169; Hugo Flávio</p>
   </div>
-
 </footer>
+
+<!--==================== SCROLL TOP ====================-->
+<a href="#" class="scrollup" id="scroll-up">
+  <i class="uil uil-arrow-up scrollup__icon"></i>
+</a>
