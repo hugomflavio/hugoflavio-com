@@ -480,128 +480,128 @@
     justify-content: center;
   }
 
-/*==================== SKILLS ====================*/
-  .skills__container{
+/*==================== Unused ====================*/
+  .unused__container{
     row-gap: 0;
   }
 
-  .skills__header{
+  .unused__header{
     display: flex;
     align-items: center;
     margin-bottom: var(--mb-2-5);
     cursor: pointer;
   }
 
-  .skills__icon,
-  .skills__arrow{
+  .unused__icon,
+  .unused__arrow{
     font-size: 2rem;
     color: var(--first-color);
   }
 
-  .skills__icon{
+  .unused__icon{
     margin-right: var(--mb-0-75);
   }
 
-  .skills__title{
+  .unused__title{
     font-size: var(--h3-font-size);
   }
 
-  .skills__subtitle{
+  .unused__subtitle{
     font-size: var(--small-font-size);
     color: var(--text-color-light);
   }
 
-  .skills__arrow{
+  .unused__arrow{
     margin-left: auto;
     transition: .4s;
   }
 
-  .skills__list{
+  .unused__list{
     row-gap: 1.5rem;
     padding-left: 2.7rem;
   }
 
-  .skills__titles{
+  .unused__titles{
     display: flex;
     justify-content: space-between;
     margin-bottom: var(--mb-0-5);
   }
 
-  .skills__name{
+  .unused__name{
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
   }
 
-  .skills__bar,
-  .skills__percentage{
+  .unused__bar,
+  .unused__percentage{
     height: 5px;
     border-radius: 0.25rem;
   }
 
-  .skills__bar{
+  .unused__bar{
     background-color: var(--first-color-lighter);
   }
 
-  .skills__percentage{
+  .unused__percentage{
     display: block;
     background-color: var(--first-color);
   }
 
-  .skills__html{
+  .unused__html{
     width: 90%;
   }
 
-  .skills__css{
+  .unused__css{
     width: 90%;
   }
 
-  .skills__js{
+  .unused__js{
     width: 90%;
   }
 
-  .skills__react{
+  .unused__react{
     width: 90%;
   }
 
-  .skills__php{
+  .unused__php{
     width: 90%;
   }
 
-  .skills__node{
+  .unused__node{
     width: 90%;
   }
 
-  .skills__firebase{
+  .unused__firebase{
     width: 90%;
   }
 
-  .skills__python{
+  .unused__python{
     width: 90%;
   }
 
-  .skills__figma{
+  .unused__figma{
     width: 90%;
   }
 
-  .skills__sketch{
+  .unused__sketch{
     width: 90%;
   }
 
-  .skills__photoshop{
+  .unused__photoshop{
     width: 90%;
   }
 
-  .skills__close .skills__list{
+  .unused__close .unused__list{
     height: 0;
     overflow: hidden;
   }
 
-  .skills__open .skills__list{
+  .unused__open .unused__list{
     height: max-content;
     margin-bottom: var(--mb-2-5);
   }
 
-  .skills__open .skills__arrow{
+  .unused__open .unused__arrow{
     transform: rotate(-180deg);
   }
 
@@ -681,13 +681,13 @@
     color: var(--first-color);
   }
 
-/*==================== SERVICES ====================*/
-  .services__container{
+/*==================== SKILLS ====================*/
+  .skills__container{
     gap: 1.5rem;
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .services__content{
+  .skills__content{
     position: relative;
     background-color: var(--container-color);
     padding: 3.5rem 0.5rem 1.25rem 1.5rem;
@@ -696,27 +696,27 @@
     transition: 0.3s;
   }
 
-  .services__content:hover{
+  .skills__content:hover{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   }
 
-  .services__icon{
+  .skills__icon{
     display: block;
     font-size: 1.5rem;
     color: var(--first-color);
     margin-bottom: var(--mb-1);
   }
 
-  .services__button{
+  .skills__button{
     cursor: pointer;
     font-size: var(--small-font-size);
   }
 
-  .services__button:hover .button__icon{
+  .skills__button:hover .button__icon{
     transform: translateX(.25rem);
   }
   
-  .services__modal{
+  .skills__modal{
     position: fixed;
     top: 0;
     left: 0;
@@ -733,28 +733,28 @@
     transition: 0.3;
   }
 
-  .services__modal-content{
+  .skills__modal-content{
     position: relative;
     background-color: var(--container-color);
     padding: 1.5rem;
     border-radius: .5rem;
   }
 
-  .services__modal-services{
+  .skills__modal-skills{
     row-gap: 1rem;
   }
 
-  .services__modal-service{
+  .skills__modal-service{
     display: flex;
   }
 
-  .services__modal-title{
+  .skills__modal-title{
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
     margin-bottom: var(--mb-1-5);
   }
 
-  .services__modal-close{
+  .skills__modal-close{
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -763,7 +763,7 @@
     cursor: pointer;
   }
 
-  .services__modal-icon{
+  .skills__modal-icon{
     color: var(--first-color);
     margin-right: var(--mb-0-25);
   }
@@ -1069,7 +1069,7 @@
     width: 180px;
   }
 
-  .skills__title{
+  .unused__title{
     font-size: var(--normal-font-size);
   }
 
@@ -1077,14 +1077,14 @@
     gap: 0.5rem;
   }
 
-  .services__container{
+  .skills__container{
     grid-template-columns: max-content;
     justify-content: center;
   }
-  .services__content{
+  .skills__content{
     padding-right: 3.5rem;
   }
-  .services__modal{
+  .skills__modal{
     padding: 0 0.5rem;
   }
 
@@ -1121,7 +1121,7 @@
     justify-self: center;
   }
 
-  .skills__container,
+  .unused__container,
   .portfolio__content,
   .project__container,
   .footer__container{
@@ -1229,17 +1229,17 @@
     grid-template-columns: 0.5fr;
   }
 
-  .services__container{
+  .skills__container{
     grid-template-columns: repeat(3, 218px);
     justify-content: center;
   }
-  .services__icon{
+  .skills__icon{
     font-size: 2rem;
   }
-  .services__content{
+  .skills__content{
     padding: 6rem 0 2rem 2.5rem;
   }
-  .services__modal-content{
+  .skills__modal-content{
     width: 450px;
   }
 
@@ -1300,7 +1300,7 @@
     transform: translateX(-6rem);
   }
 
-  .services__container{
+  .skills__container{
     grid-template-columns: repeat(3, 238px);
   }
 

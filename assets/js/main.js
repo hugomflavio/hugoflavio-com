@@ -31,25 +31,25 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
-/*==================== ACCORDION SKILLS ====================*/
-const skillsContent = document.getElementsByClassName('skills__content'),
-	  skillsHeader = document.querySelectorAll('.skills__header')
+/*==================== ACCORDION Unused ====================*/
+// const unusedContent = document.getElementsByClassName('unused__content'),
+// 	  unusedHeader = document.querySelectorAll('.unused__header')
 
-function toggleSkills(){
-	let itemClass = this.parentNode.className
+// function toggleUnused(){
+// 	let itemClass = this.parentNode.className
 
-	for(i = 0; i < skillsContent.length; i++){
-		skillsContent[i].className = 'skills__content skills__close'
-	}
+// 	for(i = 0; i < unusedContent.length; i++){
+// 		unusedContent[i].className = 'unused__content unused__close'
+// 	}
 
-	if(itemClass === 'skills__content skills__close'){
-		this.parentNode.className = 'skills__content skills__open'
-	}
-}
+// 	if(itemClass === 'unused__content unused__close'){
+// 		this.parentNode.className = 'unused__content unused__open'
+// 	}
+// }
 
-skillsHeader.forEach((el) =>{
-	el.addEventListener('click', toggleSkills)
-})
+// unusedHeader.forEach((el) =>{
+// 	el.addEventListener('click', toggleUnused)
+// })
 
 /*==================== QUALIFICATION TABS ====================*/
 const tabs = document.querySelectorAll('[data-target'),
@@ -71,10 +71,10 @@ tabs.forEach(tab =>{
 	})
 })
 
-/*==================== SERVICES MODAL ====================*/
-const modalViews = document.querySelectorAll('.services__modal'),
-	  modalBtns = document.querySelectorAll('.services__button'),
-	  modalCloses = document.querySelectorAll('.services__modal-close')
+/*==================== SKILLS MODAL ====================*/
+const modalViews = document.querySelectorAll('.skills__modal'),
+	  modalBtns = document.querySelectorAll('.skills__button'),
+	  modalCloses = document.querySelectorAll('.skills__modal-close')
 
 let modal = function(modalClick){
 	modalViews[modalClick].classList.add('active-modal')
