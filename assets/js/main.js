@@ -31,25 +31,25 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
-/*==================== ACCORDION Unused ====================*/
-// const unusedContent = document.getElementsByClassName('unused__content'),
-// 	  unusedHeader = document.querySelectorAll('.unused__header')
+/*==================== ACCORDION INTERESTS ====================*/
+const interestsContent = document.getElementsByClassName('interests__content'),
+	  interestsHeader = document.querySelectorAll('.interests__header')
 
-// function toggleUnused(){
-// 	let itemClass = this.parentNode.className
+function toggleUnused(){
+	let itemClass = this.parentNode.className
 
-// 	for(i = 0; i < unusedContent.length; i++){
-// 		unusedContent[i].className = 'unused__content unused__close'
-// 	}
+	for(i = 0; i < interestsContent.length; i++){
+		interestsContent[i].className = 'interests__content interests__close'
+	}
 
-// 	if(itemClass === 'unused__content unused__close'){
-// 		this.parentNode.className = 'unused__content unused__open'
-// 	}
-// }
+	if(itemClass === 'interests__content interests__close'){
+		this.parentNode.className = 'interests__content interests__open'
+	}
+}
 
-// unusedHeader.forEach((el) =>{
-// 	el.addEventListener('click', toggleUnused)
-// })
+interestsHeader.forEach((el) =>{
+	el.addEventListener('click', toggleUnused)
+})
 
 /*==================== QUALIFICATION TABS ====================*/
 const tabs = document.querySelectorAll('[data-target'),

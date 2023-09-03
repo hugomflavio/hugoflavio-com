@@ -480,128 +480,129 @@
     justify-content: center;
   }
 
-/*==================== Unused ====================*/
-  .unused__container{
+/*==================== Interests ====================*/
+  .interests__container{
     row-gap: 0;
+    column-gap: 3rem;
   }
 
-  .unused__header{
+  .interests__header{
     display: flex;
     align-items: center;
     margin-bottom: var(--mb-2-5);
     cursor: pointer;
   }
 
-  .unused__icon,
-  .unused__arrow{
+  .interests__icon,
+  .interests__arrow{
     font-size: 2rem;
     color: var(--first-color);
   }
 
-  .unused__icon{
+  .interests__icon{
     margin-right: var(--mb-0-75);
   }
 
-  .unused__title{
+  .interests__title{
     font-size: var(--h3-font-size);
   }
 
-  .unused__subtitle{
+  .interests__subtitle{
     font-size: var(--small-font-size);
     color: var(--text-color-light);
   }
 
-  .unused__arrow{
+  .interests__arrow{
     margin-left: auto;
     transition: .4s;
   }
 
-  .unused__list{
+  .interests__list{
     row-gap: 1.5rem;
     padding-left: 2.7rem;
   }
 
-  .unused__titles{
+  .interests__titles{
     display: flex;
     justify-content: space-between;
     margin-bottom: var(--mb-0-5);
   }
 
-  .unused__name{
+  .interests__name{
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
   }
 
-  .unused__bar,
-  .unused__percentage{
+  .interests__bar,
+  .interests__percentage{
     height: 5px;
     border-radius: 0.25rem;
   }
 
-  .unused__bar{
+  .interests__bar{
     background-color: var(--first-color-lighter);
   }
 
-  .unused__percentage{
+  .interests__percentage{
     display: block;
     background-color: var(--first-color);
   }
 
-  .unused__html{
+  .interests__html{
     width: 90%;
   }
 
-  .unused__css{
+  .interests__css{
     width: 90%;
   }
 
-  .unused__js{
+  .interests__js{
     width: 90%;
   }
 
-  .unused__react{
+  .interests__react{
     width: 90%;
   }
 
-  .unused__php{
+  .interests__php{
     width: 90%;
   }
 
-  .unused__node{
+  .interests__node{
     width: 90%;
   }
 
-  .unused__firebase{
+  .interests__firebase{
     width: 90%;
   }
 
-  .unused__python{
+  .interests__python{
     width: 90%;
   }
 
-  .unused__figma{
+  .interests__figma{
     width: 90%;
   }
 
-  .unused__sketch{
+  .interests__sketch{
     width: 90%;
   }
 
-  .unused__photoshop{
+  .interests__photoshop{
     width: 90%;
   }
 
-  .unused__close .unused__list{
+  .interests__close .interests__list{
     height: 0;
     overflow: hidden;
   }
 
-  .unused__open .unused__list{
+  .interests__open .interests__list{
     height: max-content;
     margin-bottom: var(--mb-2-5);
   }
 
-  .unused__open .unused__arrow{
+  .interests__open .interests__arrow{
     transform: rotate(-180deg);
   }
 
@@ -1069,7 +1070,7 @@
     width: 180px;
   }
 
-  .unused__title{
+  .interests__title{
     font-size: var(--normal-font-size);
   }
 
@@ -1121,7 +1122,6 @@
     justify-self: center;
   }
 
-  .unused__container,
   .portfolio__content,
   .project__container,
   .footer__container{
@@ -1227,6 +1227,10 @@
 
   .qualification__sections{
     grid-template-columns: 0.5fr;
+  }
+
+  .interests__container{
+    grid-template-columns: repeat(2, 1fr);    
   }
 
   .skills__container{
