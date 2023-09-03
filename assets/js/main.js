@@ -94,6 +94,28 @@ modalCloses.forEach((modalClose) => {
 	})
 })
 
+modalCloses.forEach((modalClose) => {
+	modalClose.addEventListener('keypress', (event) =>{
+		modalViews.forEach((modalView) =>{
+			if (event.keyCode == 27) {
+				modalView.classList.remove('active-modal')
+			}
+		})
+	})
+})
+
+
+document.addEventListener("keydown", (event) => {
+    if (event.keyCode === 27) {
+		modalViews.forEach((modalView) =>{
+			if (event.keyCode == 27) {
+				modalView.classList.remove('active-modal')
+			}
+		}) 
+	}
+})
+
+
 /*==================== TESTIMONIAL ====================*/
 // swiper js moved to indext.html as it was not working here for some reason.
 
