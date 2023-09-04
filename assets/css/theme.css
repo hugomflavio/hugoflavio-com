@@ -701,6 +701,12 @@
     color: var(--first-color);
   }
 
+  .qualification__learn-more{
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--mb-2);
+    margin-top: var(--mb-2);
+  }
 /*==================== SKILLS ====================*/
   .skills__container{
     gap: 1.5rem;
@@ -893,6 +899,13 @@
     outline: none;
   }
 
+  .portfolio__learn-more{
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--mb-2);
+    margin-top: 4rem;
+  }
+
 /*==================== PROJECT IN MIND ====================*/
   .contact{
     text-align: center;
@@ -968,7 +981,12 @@
     bottom: 0;
   }
 
-
+  .testimonial__learn-more{
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--mb-2);
+    margin-top: 4rem;
+  }
 /*==================== CONTACT ME ====================*/
 
 
@@ -1161,6 +1179,10 @@
     grid-template-columns: 0.6fr;
     justify-content: center;
   }
+
+  .portfolio__learn-more{
+    margin-top: 4rem;
+  }
 }
 
 @media screen and (min-width: 768px){
@@ -1249,6 +1271,17 @@
     justify-content: initial;
   }
 
+  .about__button_download{
+    margin-right: 10px;
+  }
+  .about__button_download:hover .button__icon{
+    transform: translateY(0.25rem);
+  }
+/*  .about__button_more:hover .button__icon{
+    transform: translate(0.2rem, -0.2rem);
+  }*/
+
+
   .qualification__tabs{
     justify-content: center;
   }
@@ -1286,6 +1319,12 @@
   }
   .portfolio__content{
     align-items: center;
+  }
+  .swiper-css-mode > .swiper-pagination-bullets{
+    bottom: -4.5rem;
+  }
+  .portfolio__learn-more{
+    margin-top: 6rem;
   }
 
   .contact{
@@ -1356,9 +1395,6 @@
   }
   .swiper-button-next{
     right: -3.5rem;
-  }
-  .swiper-css-mode > .swiper-pagination-bullets{
-    bottom: -4.5rem;
   }
 }
 
