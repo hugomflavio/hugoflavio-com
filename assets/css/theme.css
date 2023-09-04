@@ -499,6 +499,13 @@
     justify-content: center;
   }
 
+  .about__button_download{
+    margin-right: 10px;
+  }
+  .about__button_download:hover .button__icon{
+    transform: translateY(0.25rem);
+  }
+
 /*==================== Interests ====================*/
   .interests__container{
     row-gap: 0;
@@ -1270,17 +1277,6 @@
   .about__buttons{
     justify-content: initial;
   }
-
-  .about__button_download{
-    margin-right: 10px;
-  }
-  .about__button_download:hover .button__icon{
-    transform: translateY(0.25rem);
-  }
-/*  .about__button_more:hover .button__icon{
-    transform: translate(0.2rem, -0.2rem);
-  }*/
-
 
   .qualification__tabs{
     justify-content: center;
