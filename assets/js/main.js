@@ -117,7 +117,7 @@ document.addEventListener("keydown", (event) => {
 
 
 /*==================== TESTIMONIAL ====================*/
-// swiper js moved to indext.html as it was not working here for some reason.
+// swiper js moved to index.html as it was not working here for some reason.
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
