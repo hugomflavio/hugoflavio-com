@@ -500,7 +500,7 @@
   }
 
   .about__button_download{
-    margin-right: 10px;
+    margin-right: 5px;
   }
   .about__button_download:hover .button__icon{
     transform: translateY(0.25rem);
