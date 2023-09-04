@@ -1179,6 +1179,9 @@
   .section__subtitle{
     margin-bottom: 4rem;
   }
+  .section.home{
+    padding: 6rem 0 5rem;
+  }
 
   .header{
     top: 0;
@@ -1371,6 +1374,7 @@
   .home__social{
     transform: translateX(-9rem);
   }
+
 
   .portfolio__img-div{
     width: 450px;
