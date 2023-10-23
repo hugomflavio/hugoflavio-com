@@ -155,31 +155,34 @@ function scrollUp(){
 }
 window.addEventListener('scroll', scrollUp)
 
-/*==================== DARK LIGHT THEME ====================*/ 
+/*==================== SWITCH TO LIGHT THEME ====================*/ 
 const themeButton = document.getElementById('theme-button')
-const darkTheme = 'dark-theme'
-const iconTheme = 'uil-sun'
+const lightTheme = 'light-theme'
+const iconLightTheme = 'uil-moon'
+const iconDarkTheme = 'uil-sun'
 
 // Previously selected topic (if user selected)
 const selectedTheme = localStorage.getItem('selected-theme')
 const selectedIcon = localStorage.getItem('selected-icon')
 
-// We obtain the current theme that the interface has by validating the dark-theme class
-const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
-const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
+// We obtain the current theme that the interface has by validating the light-theme class
+const getCurrentTheme = () => document.body.classList.contains(lightTheme) ? 'light' : 'dark'
+const getCurrentIcon = () => themeButton.classList.contains(iconLightTheme) ? 'uil-sun' : 'uil-moon'
 
 // We validate if the user previously chose a topic
 if (selectedTheme) {
-  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-  themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
+  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the light
+  document.body.classList[selectedTheme === 'light' ? 'add' : 'remove'](lightTheme)
+  themeButton.classList[selectedIcon === 'uil-sun' ? 'add' : 'remove'](iconLightTheme)
+  themeButton.classList[selectedIcon === 'uil-sun' ? 'remove' : 'add'](iconDarkTheme)
 }
 
 // Activate / deactivate the theme manually with the button
 themeButton.addEventListener('click', () => {
-    // Add or remove the dark / icon theme
-    document.body.classList.toggle(darkTheme)
-    themeButton.classList.toggle(iconTheme)
+    // Add or remove the light / icon theme
+    document.body.classList.toggle(lightTheme)
+    themeButton.classList.toggle(iconLightTheme)
+    themeButton.classList.toggle(iconDarkTheme)
     // We save the theme and the current icon that the user chose
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
@@ -187,33 +190,33 @@ themeButton.addEventListener('click', () => {
 
 // ==================== PORTFOLIO JS ====================-
 
-// Initialize Swiper
-var swiperPortfolio = new Swiper(".portfolio__container", {
-	cssMode: true,
-	loop: true,
-	navigation: {
-		nextEl: ".swiper-button-next",
-		prevEl: ".swiper-button-prev",
-	},
-	pagination: {
-		el: ".swiper-pagination",
-		clickable: true,
-	},
-});
+// // Initialize Swiper
+// var swiperPortfolio = new Swiper(".portfolio__container", {
+// 	cssMode: true,
+// 	loop: true,
+// 	navigation: {
+// 		nextEl: ".swiper-button-next",
+// 		prevEl: ".swiper-button-prev",
+// 	},
+// 	pagination: {
+// 		el: ".swiper-pagination",
+// 		clickable: true,
+// 	},
+// });
 
-var swiperTestimonial = new Swiper(".testimonial__container", {
-	loop: true,
-	grabCursor: true,
-	spaceBetween: 48,
+// var swiperTestimonial = new Swiper(".testimonial__container", {
+// 	loop: true,
+// 	grabCursor: true,
+// 	spaceBetween: 48,
 
-	pagination: {
-		el: ".swiper-pagination",
-		clickable: true,
-		dynamicBullets: true,
-	},
-	breakpoints:{
-		568:{
-			slidesPerView: 2,
-		}
-	}
-});
+// 	pagination: {
+// 		el: ".swiper-pagination",
+// 		clickable: true,
+// 		dynamicBullets: true,
+// 	},
+// 	breakpoints:{
+// 		568:{
+// 			slidesPerView: 2,
+// 		}
+// 	}
+// });
