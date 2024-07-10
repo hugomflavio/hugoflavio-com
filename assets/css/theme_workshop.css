@@ -1,0 +1,321 @@
+  .diy_home__blob-img{
+    width: 170px;
+  }
+
+/*==================== warning sign ====================*/
+  .warning{
+    display:inline-flex;
+    align-items: center;
+    background-color: var(--first-color);
+    color: #FFF;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-weight: var(--font-medium);
+  }
+
+/*  .warning:hover{
+    background-color: var(--first-color-alt);
+  }*/
+
+  .warning__icon{
+    font-size: 5rem;
+    margin-left: var(--mb-0-5);
+    margin-right: var(--mb-0-5);
+  }
+
+
+
+/*==================== manual home ====================*/
+  .manual__home__container{
+    gap: 1rem;
+  }
+
+  .manual__home__content{
+    grid-template-columns: .5fr 3fr;
+    padding-top: 3.5rem;
+    align-items: center;
+  }
+
+  .manual__home__social{
+    display: grid;
+    grid-template-columns: max-content;
+    row-gap: 1rem;
+  }
+
+  .manual__home__social-icon{
+    font-size: 1.24rem;
+    color: var(--first-color);
+  }
+
+  .manual__home__social-icon:hover{
+    color: var(--first-color-alt);
+  }
+
+  .manual__home__img{
+    width: 300px;
+  }
+
+  .manual__home__data{
+    grid-column: 1/3;
+  }
+
+  .manual__home__title{
+    font-size: var(--big-font-size);
+  }
+
+  .manual__home__subtitle{
+    font-size: var(--h3-font-size);
+    color: var(--text-color);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-0-75);
+  }
+
+  .manual__home__description{
+    margin-bottom: var(--mb-2);
+  }
+
+  .manual__home__scroll{
+    display: none;
+  }
+
+  .manual__home__scroll-button{
+    color: var(--first-color);
+    transition: 0.3s;
+  }
+
+  .manual__home__scroll-button:hover{
+    transform: translateY(0.25rem);
+  }
+
+  .manual__home__scroll-mouse{
+    font-size: 2rem;
+  }
+
+  .manual__home__scroll-name{
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+    margin-right: var(--mb-0-25);
+  }
+
+  .manual__home__scroll-arrow{
+    font-size: 1.25rem;
+  }
+
+
+/*==================== Manual columns ====================*/
+  .manual__1C__container, 
+  .manual__2C__container{
+    padding-top: 3.5rem;
+    column-gap: 5rem;
+  }
+
+  .manual__1C__img, 
+  .manual__2C__img{
+    width: 350px;
+    border-radius: 0.5rem;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .manual__1C__description, 
+  .manual__2C__description{
+    margin-bottom: var(--mb-2-5);
+  }
+
+  .manual__1C__grid-list,
+  .manual__2C__grid-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .manual__1C__grid-list li,
+  .manual__2C__grid-list li {
+    list-style-type: none;
+    text-align: left;
+    font-size: 15px;
+    margin: 20px 50px;
+  }
+
+  .manual__1C__grid-list li:before,
+  .manual__2C__grid-list li:before {
+    content: '\f105';
+    font-family: FontAwesome;
+    margin-left: -20px;
+    margin-right: 10px;
+  }
+
+
+/*========== DYI drawings ==========*/
+  .drawing__annotation{
+    fill: var(--annotation-color);
+    stroke: var(--annotation-color);
+/*    stroke-width: 0.2;*/
+  }
+
+  .drawing__outline{
+    stroke: var(--annotation-color);
+/*    stroke-width: 0.25;*/
+  }
+
+  .drawing__outline_light{
+    stroke: var(--annotation-color-light);
+/*    stroke-width: 0.25;*/
+  }
+
+
+/*==================== blueprints ====================*/
+  .blueprints__container{
+    gap: 1.5rem;
+    grid-template-columns: repeat(1, 350px);
+    justify-content: center;
+  }
+
+  .blueprints__description{
+    display:none;
+  }
+
+  .blueprints__content{
+    position: relative;
+    background-color: var(--container-color);
+    padding: 3.5rem 0.5rem 1.25rem 1.5rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+    grid-template-columns: 1fr;
+  }
+
+  .blueprints__content:hover{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .blueprints__icon{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--first-color);
+    margin-bottom: var(--mb-1);
+  }
+
+  .blueprints__button{
+    cursor: pointer;
+    font-size: var(--small-font-size);
+  }
+
+  .blueprints__button:hover .button__icon{
+    transform: translateX(.25rem);
+  }
+    
+  .blueprints__img{
+    width: 300px;
+  }
+
+
+/*==================== MEDIA QUERIES ====================*/
+/* For small devices */
+@media screen and (max-width: 350px){
+  .manual__home__content{
+    grid-template-columns: 0.25fr 3fr;
+  }
+  .manual__home__img{
+    width: 180px;
+  }
+}
+
+/* For medium devices */
+@media screen and (min-width: 568px){
+  .manual__home__img{
+    width: 400px;
+  }
+
+  .manual__1C__img,
+  .manual__2C__img{
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .manual__home__img{
+    width: 500px;
+  }
+  
+  .manual__home__container{
+    row-gap: 5rem;
+  }
+  .manual__home__content{
+    padding-top: 5.5rem;
+  }
+  .manual__home__scroll{
+    display: block;
+  }
+  .manual__home__scroll-button{
+    margin-left: 3rem;
+  }
+
+  .manual__1C__img{
+    width: 700px;
+  }
+
+  .manual__2C__info{
+    justify-content: space-between;
+  }
+  .manual__2C__buttons{
+    justify-content: initial;
+  }
+  .manual__1C__grid-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .blueprints__container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* For large devices */
+@media screen and (min-width: 1024px){
+  .manual__home__social{
+    transform: translateX(-6rem);
+  }
+  .manual__1C__img{
+    width: 800px;
+  }
+}
+
+/* For XXL devices */
+@media screen and (min-width: 1400px){
+  .manual__home__container{
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+
+  .manual__home__content{
+    grid-template-columns: max-content 1fr 1fr;
+  }
+  .manual__home__data{
+    grid-column: initial;
+  }
+  .manual__home__img{
+    order: 1;
+    justify-self: center;
+  }
+  .manual__home__social{
+    transform: translateX(-9rem);
+  }
+  .manual__2C__content{
+    grid-template-columns: 1fr 1fr;    
+  }
+  .manual__1C__grid-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .blueprints__container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .blueprints__content{
+    grid-template-columns: 1fr 3fr;
+  }
+  .blueprints__description{
+    display:block;
+    padding-right: 2rem;
+  }
+
+}
