@@ -2,7 +2,7 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-layout: base
+layout: home
 ---
 
 <!--==================== HOME ====================-->
@@ -10,6 +10,10 @@ layout: base
     <div class="home__container container grid">
         <div class="home__content grid">
             <div class="home__social">
+                <a href="https://bsky.app/profile/hugoflavio.bsky.social" target="_blank" class="home__social-icon">
+                    <img height="16" width="16" src="https://cdn.simpleicons.org/bluesky/db723dff"/></img>
+                </a>
+
                 <a href="https://ecoevo.social/@HugoMFlavio" target="_blank" rel="me" class="home__social-icon">
                    <i class="fab fa-mastodon"></i>
                 </a>
@@ -38,7 +42,7 @@ layout: base
                   <g mask="url(#mask0)" id="g12401">
                     <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" id="path12397"/>
                     <path d="m 190.31201,36.4879 c 16.26999,25.6308 10.997,66.3381 -7.98401,97.6981 -18.98199,31.361 -51.52099,53.373 -82.102,52.167 C 69.645396,185.297 41.022801,161.023 21.740301,129.362 2.4577508,97.8511 -7.4848092,59.1033 6.6758108,34.5279 20.987101,10.1032 59.702806,-0.14913164 97.966596,0.00163736 136.23,0.30317636 174.193,10.857 190.31201,36.4879 Z" id="path906-2" style="fill:url(#linearGradient11147);fill-opacity:1;stroke:none"/>
-                    <image class="home__blob-img" x=12 y=18 xlink:href="assets/img/perfil_small.png"/>
+                    <image class="home__blob-img" x=12 y=18 xlink:href="assets/img/home/perfil_small.png"/>
                   </g>
                 </svg>
             </div>
@@ -69,19 +73,19 @@ layout: base
 </section>
 
 <!--==================== ABOUT ====================-->
-{%- include home_about.html -%}
+{%- include home/home_about.html -%}
 
 <!--==================== QUALIFICATION ====================-->
-{%- include home_qualifications.html -%}
+{%- include home/home_qualifications.html -%}
 
 <!--==================== INTERESTS ====================-->
-{%- include home_interests.html -%}
+{%- include home/home_interests.html -%}
 
 <!--==================== SKILLS ====================-->
-{%- include home_skills.html -%}
+{%- include home/home_skills.html -%}
 
 <!--==================== PORTFOLIO ====================-->
-{%- include home_portfolio.html -%}
+{%- include home/home_portfolio.html -%}
 
 <!--==================== CONTACT ME ====================-->
 {%- include contact_me.html -%}
