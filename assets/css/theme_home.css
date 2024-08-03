@@ -396,6 +396,7 @@
     display: inline-block;
     background-color: var(--first-color);
     color: #FFF;
+    opacity: 1;
     padding: 1rem;
     border-radius: 0.5rem;
     font-weight: var(--font-medium);
@@ -930,6 +931,14 @@
     outline: none;
   }
 
+  .portfolio__blob{
+    fill: var(--first-color);
+  }
+
+  .portfolio__blob_data{
+    text-align: center;
+  }
+
   .portfolio__learn-more{
     display: flex;
     justify-content: center;
@@ -1349,6 +1358,10 @@
     margin-top: 6rem;
   }
 
+  .portfolio__blob_data{
+    text-align: left;
+  }
+  
   .contact{
     text-align: initial;
   }

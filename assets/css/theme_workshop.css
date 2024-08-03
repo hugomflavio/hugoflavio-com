@@ -23,7 +23,37 @@
     margin-right: var(--mb-0-5);
   }
 
+/*==================== search bar ====================*/
+  .workshop_search__box{
+    background-color: var(--first-color-second);
+    padding: 0.5rem 0rem 0.5rem;
+    display: block;
+    margin-bottom: var(--mb-3);
+    border-radius: 1rem;
+  }
 
+  .workshop_search__text{
+/*    color: var(--title-color);*/
+    color: #FFF;
+    background-color: var(--first-color-second);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    border: 0;
+    outline: none;
+    text-align: center;
+    padding: 0.5rem 0rem 0.5rem;
+    display: inline-block;
+    width:100%;
+  }
+
+  .workshop_search__text::placeholder {
+    color: #FFF;
+    opacity: 1; /* Firefox */
+  }
+
+  .workshop_search__text:focus::placeholder {
+    color: transparent;
+  }  
 
 /*==================== manual home ====================*/
   .manual__home__container{
