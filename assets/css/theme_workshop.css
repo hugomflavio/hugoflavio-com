@@ -188,6 +188,11 @@
 /*    stroke-width: 0.25;*/
   }
 
+  .drawing__fill{
+    fill: var(--annotation-color);
+    fill-opacity: 0.5;
+  }
+
   .drawing__outline_light{
     stroke: var(--annotation-color-light);
 /*    stroke-width: 0.25;*/
