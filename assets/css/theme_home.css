@@ -485,6 +485,13 @@
     align-self: center;
   }
 
+  .about__img_wide{
+    display: inline;
+  }
+  .about__img_tall{
+    display: none;
+  }
+
   .about__description{
     text-align: center;
     margin-bottom: var(--mb-2-5);
@@ -1302,6 +1309,12 @@
   }
   .about__img{
     width: auto;
+  }
+  .about__img_wide{
+    display: none;
+  }
+  .about__img_tall{
+    display: inline;
   }
   .about__description{
     text-align: initial;
