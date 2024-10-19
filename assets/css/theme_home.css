@@ -1460,6 +1460,9 @@
     transform: translateX(-9rem);
   }
 
+  .about__img{
+    height: 600px;
+  }
 
   .portfolio__img-div{
     width: 450px;
