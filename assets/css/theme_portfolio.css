@@ -1,16 +1,18 @@
 /*==================== search bar ====================*/
   .portfolio_search__box{
-    background-color: var(--first-color-second);
+    background-color: #FFF;
     padding: 0.5rem 0rem 0.5rem;
     display: block;
     margin-bottom: var(--mb-3);
     border-radius: 1rem;
+    border-style: solid;
+    border-color: var(--first-color-second);
   }
 
   .portfolio_search__text{
 /*    color: var(--title-color);*/
-    color: #FFF;
-    background-color: var(--first-color-second);
+    background-color: #FFF;
+    color: var(--first-color-second);
     font-size: var(--small-font-size);
     font-weight: var(--font-semi-bold);
     border: 0;
@@ -18,13 +20,22 @@
     text-align: center;
     padding: 0.5rem 0rem 0.5rem;
     display: inline-block;
-    width:100%;
+    width:95%;
+    margin-left: 2.5%;
   }
 
   .portfolio_search__text::placeholder {
-    color: #FFF;
+    color: var(--first-color-second);
     opacity: 1; /* Firefox */
   }
+
+/*  .portfolio_search__text::after{
+    color: var(--first-color-second);
+    white-space:nowrap;
+    content: ' \f08e';
+    font-family: FontAwesome;
+    font-size: var(--smaller-font-size);
+  }*/
 
   .portfolio_search__text:focus::placeholder {
     color: transparent;
